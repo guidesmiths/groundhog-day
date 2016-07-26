@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/guidesmiths/prepper/master.svg)](https://travis-ci.org/guidesmiths/prepper)
+[![Build Status](https://img.shields.io/travis/guidesmiths/groundhog-day/master.svg)](https://travis-ci.org/guidesmiths/groundhog-day)
 [![Code Style](https://img.shields.io/badge/code%20style-imperative-brightgreen.svg)](https://github.com/guidesmiths/eslint-config-imperative)
 
 # groundhog-day
