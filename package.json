@@ -15,9 +15,6 @@
   ],
   "author": "GuideSmiths Ltd",
   "license": "ISC",
-  "dependencies": {
-    "mocha": "^2.5.3"
-  },
   "directories": {
     "test": "tests"
   },
