@@ -1,0 +1,33 @@
+{
+  "name": "groundhog-day",
+  "version": "1.0.0",
+  "description": "A stupidly simple library for controlling time",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [
+    "Fake",
+    "Clock",
+    "Stub"
+  ],
+  "author": "GuideSmiths Ltd",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^2.5.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidesmiths/groundhog-day.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guidesmiths/groundhog-day/issues"
+  },
+  "homepage": "https://github.com/guidesmiths/groundhog-day#readme"
+}
