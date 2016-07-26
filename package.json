@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha tests",
     "lint": "eslint .",
-    "pre-commit": "npm run lint && npm test"
+    "precommit": "npm run lint && npm test"
   },
   "keywords": [
     "Fake",
