@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
+    "istanbul": "istanbul cover --report html --report lcov _mocha",
+    "codeclimate": "(test -e .codeclimate && npm run istanbul && source .codeclimate && codeclimate-test-reporter < coverage/lcov.info) || echo skipping codeclimate",
     "lint": "eslint .",
-    "precommit": "npm run lint && npm test"
+    "prepush": "npm run lint && npm test && npm run codeclimate"
   },
   "keywords": [
     "Fake",
@@ -19,10 +21,12 @@
     "test": "test"
   },
   "devDependencies": {
+    "codeclimate-test-reporter": "^0.5.0",
     "eslint": "^4.3.0",
     "eslint-config-imperative": "^2.0.1",
     "eslint-plugin-imperative": "^2.0.0",
     "husky": "^0.14.3",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2"
   },
   "repository": {
