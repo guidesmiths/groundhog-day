@@ -2,7 +2,7 @@
 [![Code Style](https://img.shields.io/badge/code%20style-imperative-brightgreen.svg)](https://github.com/guidesmiths/eslint-config-imperative)
 
 # groundhog-day
-An wrapper around ```Date.now()``` with real and fake implementations for temporal unit testing. Inject either the fake or real implementations into your own modules, and use ```clock.now()``` or ```new Date(clock.now())``` instead of ```Date.now()``` and ```new Date()``` to gain control
+A wrapper around ```Date.now()``` with real and fake implementations for temporal unit testing. Inject either the fake or real implementations into your own modules, and use ```clock.now()``` or ```new Date(clock.now())``` instead of ```Date.now()``` and ```new Date()``` to gain control
 
 # tl;dr
 ```
