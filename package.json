@@ -4,7 +4,7 @@
   "description": "A stupidly simple library for controlling time",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests",
+    "test": "mocha",
     "lint": "eslint .",
     "precommit": "npm run lint && npm test"
   },
@@ -16,7 +16,7 @@
   "author": "GuideSmiths Ltd",
   "license": "ISC",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "devDependencies": {
     "eslint": "^4.3.0",
@@ -32,5 +32,11 @@
   "bugs": {
     "url": "https://github.com/guidesmiths/groundhog-day/issues"
   },
-  "homepage": "https://github.com/guidesmiths/groundhog-day#readme"
+  "homepage": "https://guidesmiths.github.io/groundhog-day/",
+  "dependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-imperative": "^2.0.1",
+    "eslint-plugin-imperative": "^2.0.0",
+    "husky": "^0.14.3"
+  }
 }
