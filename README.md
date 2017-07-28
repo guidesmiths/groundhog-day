@@ -1,6 +1,6 @@
 # groundhog-day
 
-groundhog-day is a wrapper around ```Date.now()``` with real and fake implementations. The real implementation returns the current time, the fake implementation returns a fixed time (defaults to 2016-02-02T11:00:00.000Z). Use the real implementation in your production code, but inject the fake implementation in tests for predictable results.
+groundhog-day is a wrapper around ```Date.now()``` with real and fake implementations. The real implementation returns the current time, the fake implementation returns a fixed time (defaults to Groundhog day). Use the real implementation in your production code, but inject the fake implementation in tests for predictable results.
 
 [![NPM version](https://img.shields.io/npm/v/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
 [![NPM downloads](https://img.shields.io/npm/dm/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
@@ -11,7 +11,6 @@ groundhog-day is a wrapper around ```Date.now()``` with real and fake implementa
 [![Dependency Status](https://david-dm.org/guidesmiths/groundhog-day.svg)](https://david-dm.org/guidesmiths/groundhog-day)
 [![devDependencies Status](https://david-dm.org/guidesmiths/groundhog-day/dev-status.svg)](https://david-dm.org/guidesmiths/groundhog-day?type=dev)
 
-**I wake up every day, right here, right in Punxsutawney, and it's always February 2nd, and there's nothing I can do about it.**
 
 ## TL;DR
 
