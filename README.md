@@ -35,7 +35,7 @@ describe('Server', () => {
   it('should set last modified header', done => {
     request.get('http://localhost/demo', (err, res, body) => {
       assert.ok(err)
-      assert.equal(res.headers['last-modified'], 'Tue, 2 Feb 2016 11:00:00 GMT')  // Groundhog Day 2016
+      assert.equal(res.headers['last-modified'], 'Tue, 2 Feb 2016 11:00:00 GMT')  // Groundhog Day
     })
   })
 })
