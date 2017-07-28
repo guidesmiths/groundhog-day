@@ -52,7 +52,6 @@ new Server(clock).start(err => {
     if (err) process.exit(1)
     console.log('Listening')
 })
-
 ```
 
 ### Fixing Time
