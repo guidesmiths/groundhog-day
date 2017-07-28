@@ -1,5 +1,6 @@
 # groundhog-day
-A wrapper around ```Date.now()``` with real and fake implementations for time based unit testing. Inject either the fake or real implementation into your own modules, and use ```clock.now()``` or ```new Date(clock.now())``` instead of ```Date.now()``` and ```new Date()``` to gain control
+> I wake up every day, right here, right in Punxsutawney, and it's always February 2nd, and there's nothing I can do about it.
+
 
 [![NPM version](https://img.shields.io/npm/v/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
 [![NPM downloads](https://img.shields.io/npm/dm/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
@@ -9,6 +10,8 @@ A wrapper around ```Date.now()``` with real and fake implementations for time ba
 [![Code Style](https://img.shields.io/badge/code%20style-imperative-brightgreen.svg)](https://github.com/guidesmiths/eslint-config-imperative)
 [![Dependency Status](https://david-dm.org/guidesmiths/groundhog-day.svg)](https://david-dm.org/guidesmiths/groundhog-day)
 [![devDependencies Status](https://david-dm.org/guidesmiths/groundhog-day/dev-status.svg)](https://david-dm.org/guidesmiths/groundhog-day?type=dev)
+
+groundhog-day is a wrapper around ```Date.now()``` with real and fake implementations. The real implementation returns the current time, the fake implementation returns a fixed time (defaults to 2016-02-02T11:00:00.000Z). Use the real implementation in your production code, but inject the fake implementation in tests for predictable results.
 
 ## TL;DR
 
