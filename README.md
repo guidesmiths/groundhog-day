@@ -42,6 +42,7 @@ describe('Server', () => {
     })
   })
 })
+```
 
 ### 2. Use a real clock in production
 ```js
