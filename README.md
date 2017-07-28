@@ -1,6 +1,6 @@
 # groundhog-day
-> I wake up every day, right here, right in Punxsutawney, and it's always February 2nd, and there's nothing I can do about it.
 
+**I wake up every day, right here, right in Punxsutawney, and it's always February 2nd, and there's nothing I can do about it.**
 
 [![NPM version](https://img.shields.io/npm/v/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
 [![NPM downloads](https://img.shields.io/npm/dm/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
