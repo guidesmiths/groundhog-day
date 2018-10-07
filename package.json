@@ -21,13 +21,12 @@
     "test": "test"
   },
   "devDependencies": {
-    "codeclimate-test-reporter": "^0.5.0",
-    "eslint": "^4.3.0",
-    "eslint-config-imperative": "^2.0.1",
-    "eslint-plugin-imperative": "^2.0.0",
-    "husky": "^0.14.3",
+    "eslint": "^5.6.1",
+    "eslint-config-imperative": "^2.1.0",
+    "eslint-plugin-imperative": "^2.1.0",
+    "husky": "^1.1.1",
     "istanbul": "^0.4.5",
-    "mocha": "^3.4.2"
+    "mocha": "^5.2.0"
   },
   "repository": {
     "type": "git",
@@ -37,10 +36,5 @@
     "url": "https://github.com/guidesmiths/groundhog-day/issues"
   },
   "homepage": "https://guidesmiths.github.io/groundhog-day/",
-  "dependencies": {
-    "eslint": "^4.3.0",
-    "eslint-config-imperative": "^2.0.1",
-    "eslint-plugin-imperative": "^2.0.0",
-    "husky": "^0.14.3"
-  }
+  "dependencies": {}
 }

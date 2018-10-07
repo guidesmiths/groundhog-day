@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.2.0]
+### Updated
+- Updated dependencies
+
 ## [1.1.1]
 ### Updated
 - Readme
