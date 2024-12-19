@@ -1,20 +1,20 @@
 # Change Log
 
-## [1.2.0]
-### Updated
+## 2.0.0
+- Updated dependencies
+- Updated node version
+
+## 1.2.0
 - Updated dependencies
 
-## [1.1.1]
-### Updated
-- Readme
+## 1.1.1
+- Improved readme
 
-## [1.1.0]
-### Updated
-- Dependencies
-- Readme
+## 1.1.0
+- Updated dependencies
+- Improved readme
 
-## [1.0.0]
-### Added
+## 1.0.0
 - First Release
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
