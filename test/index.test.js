@@ -1,4 +1,4 @@
-const { ok, strictEqual: eq, throws } = require('assert');
+const { ok, strictEqual: eq, throws } = require('node:assert');
 const { describe, it } = require('zunit');
 const { fake, real } = require('..');
 
