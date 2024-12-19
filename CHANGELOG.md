@@ -1,5 +1,8 @@
 # Change Log
 
+## 3.0.0
+- Changed API to export fake and real clocks instead of using functions
+
 ## 2.0.0
 - Updated dependencies
 - Updated node version

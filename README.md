@@ -12,28 +12,28 @@ groundhog-day is a wrapper around ```Date.now()``` with real and fake implementa
 
 ### 1. Use a fake clock in tests
 ```js
-const Server = require('../server')
-const request = require('request')
-const clock = require('groundhog-day').fake()
-const assert = require('assert')
+const { ok, equal } = require('assert');
+const { fake: clock } = require('groundhog-day');
+const request = require('request');
+const Server = require('../server');
 
 describe('Server', () => {
 
   let server
 
-  before(done => {
-    server = new Server(clock)
-    server.start(done)
-  })
+  before((done) => {
+    server = new Server(clock);
+    server.start(done);
+  });
 
-  after(done => {
-    server.stop(done)
-  })
+  after((done) => {
+    server.stop(done);
+  });
 
-  it('should set last modified header', done => {
+  it('should set last modified header', (done) => {
     request.get('http://localhost/demo', (err, res, body) => {
-      assert.ok(err)
-      assert.equal(res.headers['last-modified'], 'Tue, 2 Feb 2016 11:00:00 GMT')  // Groundhog Day
+      ok(err);
+      equal(res.headers['last-modified'], 'Tue, 2 Feb 2016 11:00:00 GMT');  // Groundhog Day
     })
   })
 })
@@ -42,7 +42,7 @@ describe('Server', () => {
 ### 2. Use a real clock in production
 ```js
 const Server = require('./server')
-const clock = require('groundhog-day').real()
+const { real: clock } = require('groundhog-day');
 new Server(clock).start(err => {
   if (err) process.exit(1)
   console.log('Listening')
@@ -54,18 +54,18 @@ You can configure the fixed time returned by the fake clock in any of the follow
 
 By specifying the number of milliseconds
 ```js
-const clock = require('groundhog-day').fake()
-clock.fix(1469563181761)
+const { fake: clock } = require('groundhog-day');
+clock.fix(1469563181761);
 ```
 
 By specifying a date instance
 ```js
-const clock = require('groundhog-day').fake()
-clock.fix(new Date(1469563181761))
+const { fake: clock } = require('groundhog-day');
+clock.fix(new Date(1469563181761));
 ```
 
 By specifying a date string
 ```js
-const clock = require('groundhog-day').fake()
+const { fake: clock } = require('groundhog-day');
 clock.fix(new Date('2016-07-26T19:59:41.761Z'))
 ```
