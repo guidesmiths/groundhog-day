@@ -1,6 +1,6 @@
 {
   "name": "groundhog-day",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "A stupidly simple library for controlling time",
   "main": "index.js",
   "scripts": {
