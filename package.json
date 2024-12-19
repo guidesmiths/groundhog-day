@@ -8,8 +8,9 @@
     "istanbul": "istanbul cover --report html --report lcov _mocha",
     "codeclimate": "(test -e .codeclimate && npm run istanbul && source .codeclimate && codeclimate-test-reporter < coverage/lcov.info) || echo skipping codeclimate",
     "lint": "eslint .",
+    "lint-staged": "lint-staged",
     "prepush": "npm run lint && npm test && npm run codeclimate"
-  }, 
+  },
   "keywords": [
     "Fake",
     "Clock",
@@ -23,9 +24,13 @@
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-staged": "^1.0.1",
     "husky": "^1.1.1",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   },
   "repository": {
     "type": "git",
