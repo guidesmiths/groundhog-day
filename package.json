@@ -6,7 +6,6 @@
   "scripts": {
     "test": "mocha",
     "coverage": "nyc --report html --reporter lcov --reporter text-summary mocha",
-    "codeclimate": "(test -e .codeclimate && npm run istanbul && source .codeclimate && codeclimate-test-reporter < coverage/lcov.info) || echo skipping codeclimate",
     "lint": "eslint .",
     "lint-staged": "lint-staged",
     "prepush": "npm run lint && npm test && npm run codeclimate",
@@ -26,8 +25,8 @@
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-staged": "^1.0.1",
+    "lint-staged": "^15.2.11",    
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11",
     "mocha": "^5.2.0",
     "nyc": "^17.1.0"
   },

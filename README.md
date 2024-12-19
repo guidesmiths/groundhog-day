@@ -4,13 +4,9 @@ groundhog-day is a wrapper around ```Date.now()``` with real and fake implementa
 
 [![NPM version](https://img.shields.io/npm/v/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
 [![NPM downloads](https://img.shields.io/npm/dm/groundhog-day.svg?style=flat-square)](https://www.npmjs.com/package/groundhog-day)
-[![Build Status](https://img.shields.io/travis/guidesmiths/groundhog-day/master.svg)](https://travis-ci.org/guidesmiths/groundhog-day)
+[![Node.js CI](https://github.com/guidesmiths/groundhog-day/workflows/Node.js%20CI/badge.svg)](https://github.com/guidesmiths/groundhog-day/actions?query=workflow%3A%22Node.js+CI%22)
 [![Code Climate](https://codeclimate.com/github/guidesmiths/groundhog-day/badges/gpa.svg)](https://codeclimate.com/github/guidesmiths/groundhog-day)
 [![Test Coverage](https://codeclimate.com/github/guidesmiths/groundhog-day/badges/coverage.svg)](https://codeclimate.com/github/guidesmiths/groundhog-day/coverage)
-[![Code Style](https://img.shields.io/badge/code%20style-imperative-brightgreen.svg)](https://github.com/guidesmiths/eslint-config-imperative)
-[![Dependency Status](https://david-dm.org/guidesmiths/groundhog-day.svg)](https://david-dm.org/guidesmiths/groundhog-day)
-[![devDependencies Status](https://david-dm.org/guidesmiths/groundhog-day/dev-status.svg)](https://david-dm.org/guidesmiths/groundhog-day?type=dev)
-
 
 ## TL;DR
 
@@ -48,8 +44,8 @@ describe('Server', () => {
 const Server = require('./server')
 const clock = require('groundhog-day').real()
 new Server(clock).start(err => {
-    if (err) process.exit(1)
-    console.log('Listening')
+  if (err) process.exit(1)
+  console.log('Listening')
 })
 ```
 
