@@ -3,3 +3,4 @@ node_modules
 *.log
 .codeclimate
 .DS_Store
+.nyc_output
